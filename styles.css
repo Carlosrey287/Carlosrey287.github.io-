@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: darkred;
+    padding: 15px;
+    font-size: 20px;
+    color: yellow;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    background: black;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+    padding: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+.universidad {
+    background-color: #2c2c2c;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.universidad img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.botones {
+    margin-top: 20px;
+}
+
+.botones .btn {
+    background-color: darkred;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.botones .btn:hover {
+    background-color: #a50000;
+}
+
+.informacion-dinamica {
+    display: none;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: left;
+}
+
+footer {
+    background-color: #2c2c2c;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.imagen-universidad {
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+h4 {
+    font-size: 20px;
+    color: darkred;
+}

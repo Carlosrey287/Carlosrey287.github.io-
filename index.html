@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidades de Medicina en Puebla</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #900;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header marquee {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #900;
+        }
+
+        .universidad {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .imagen-universidad {
+            width: 200px;
+            height: auto;
+            float: left;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+
+        .botones {
+            margin-top: 10px;
+        }
+
+        .btn {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            margin-right: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e6b800;
+        }
+
+        .informacion-dinamica {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .informacion-dinamica img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .link-oficial {
+            color: #900;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .link-oficial:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function mostrarInformacion(id) {
+            var secciones = document.querySelectorAll('.informacion-dinamica');
+            secciones.forEach(function (seccion) {
+                seccion.style.display = 'none';  // Ocultar todas las secciones
+            });
+
+            var seleccionada = document.getElementById(id);
+            if (seleccionada) {
+                seleccionada.style.display = 'block';  // Mostrar la sección seleccionada
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <marquee>🎓 ¡Bienvenidos a la guía de Universidades de Medicina en Puebla! 🔬</marquee>
+    </header>
+
+    <section>
+        <h1>🏥 Universidades de Medicina en Puebla</h1>
+          <p>Encuentra toda la información sobre las mejores universidades para estudiar Medicina en Puebla.</p>
+    </section>
+
+    <section>
+        <h2>📚 Universidades Disponibles</h2>
+
+        <!-- Universidad 1: BUAP -->
+        <div class="universidad">
+            <img src="buap.jpg" alt="BUAP" class="imagen-universidad">
+            <h3>Benemérita Universidad Autónoma de Puebla (BUAP)</h3>
+            <p><strong>Descripción:</strong> La BUAP es una de las universidades más prestigiosas de Puebla, conocida por su enfoque en la educación integral de sus estudiantes. Ofrece programas académicos de alta calidad, con una infraestructura moderna y una amplia oferta de becas.</p>
+            
+            <div class="botones">
+                <button class="btn" onclick="mostrarInformacion('programas-buap')">📚 Programas</button>
+                <button class="btn" onclick="mostrarInformacion('requisitos-buap')">📜 Requisitos</button>
+                <button class="btn" onclick="mostrarInformacion('becas-buap')">💰 Becas</button>
+                <button class="btn" onclick="mostrarInformacion('mas-info-buap')">🔗 Ver Más</button>
+            </div>
+
+            <div id="programas-buap" class="informacion-dinamica">
+                <h4>📚 Programas Académicos BUAP</h4>
+                <ul>
+                    <li>Medicina</li>
+                    <li>Enfermería</li>
+                    <li>Cirugía</li>
+                    <li>Especialidades Médicas</li>
+                </ul>
+            </div>
+
+            <div id="requisitos-buap" class="informacion-dinamica">
+                <h4>📜 Requisitos para ingresar a BUAP</h4>
+                <ul>
+                    <li>Examen de admisión</li>
+                    <li>Certificado de bachillerato</li>
+                    <li>CURP</li>
+                    <li>Fotografía tamaño infantil</li>
+                    <li>Pago de inscripción</li>
+                </ul>
+            </div>
+
+            <div id="becas-buap" class="informacion-dinamica">
+                <h4>💰 Becas que ofrece BUAP</h4>
+                <ul>
+                    <li>Becas académicas</li>
+                    <li>Becas deportivas</li>
+                    <li>Becas socioeconómicas</li>
+                </ul>
+            </div>
+
+            <div id="mas-info-buap" class="informacion-dinamica">
+                <h4>🔗 Más información sobre BUAP</h4>
+                <p>La Benemérita Universidad Autónoma de Puebla (BUAP) es una institución pública que ofrece una excelente formación académica en el campo de la medicina. Con una infraestructura moderna y un equipo de docentes altamente capacitados, la BUAP es una de las mejores opciones para estudiar Medicina en Puebla.</p>
+                <img src="buap-imagen.jpg" alt="Imagen de BUAP" class="imagen-universidad">
+                <a href="https://www.buap.mx" target="_blank" class="link-oficial">Ir al sitio oficial de BUAP</a>
+            </div>
+        </div>
+
+        <!-- Universidad 2: UDLAP -->
+        <div class="universidad">
+            <img src="udlap.jpg" alt="UDLAP" class="imagen-universidad">
+            <h3>Universidad de las Américas Puebla (UDLAP)</h3>
+            <p><strong>Descripción:</strong> UDLAP es una universidad privada de renombre internacional, conocida por sus programas académicos de excelencia y su enfoque en la innovación y la investigación en diversas áreas de la medicina.</p>
+            
+            <div class="botones">
+                <button class="btn" onclick="mostrarInformacion('programas-udlap')">📚 Programas</button>
+                <button class="btn" onclick="mostrarInformacion('requisitos-udlap')">📜 Requisitos</button>
+                <button class="btn" onclick="mostrarInformacion('becas-udlap')">💰 Becas</button>
+                <button class="btn" onclick="mostrarInformacion('mas-info-udlap')">🔗 Ver Más</button>
+            </div>
+
+            <div id="programas-udlap" class="informacion-dinamica">
+                <h4>📚 Programas Académicos UDLAP</h4>
+                <ul>
+                    <li>Medicina General</li>
+                    <li>Psicología</li>
+                    <li>Enfermería</li>
+                </ul>
+            </div>
+
+            <div id="requisitos-udlap" class="informacion-dinamica">
+                <h4>📜 Requisitos para ingresar a UDLAP</h4>
+                <ul>
+                    <li>Examen de admisión</li>
+                    <li>Certificado de bachillerato</li>
+                    <li>Carta de recomendación</li>
+                    <li>Entrevista con el comité académico</li>
+                </ul>
+            </div>
+
+            <div id="becas-udlap" class="informacion-dinamica">
+                <h4>💰 Becas que ofrece UDLAP</h4>
+                <ul>
+                    <li>Becas de alto rendimiento académico</li>
+                    <li>Becas deportivas</li>
+                    <li>Becas por discapacidad</li>
+                </ul>
+            </div>
+
+            <div id="mas-info-udlap" class="informacion-dinamica">
+                <h4>🔗 Más información sobre UDLAP</h4>
+                <p>La UDLAP es una de las mejores universidades privadas de México, con un enfoque multidisciplinario que incluye un sólido programa de Medicina.</p>
+                <img src="UDLAP-imagen.jpg" alt="Imagen de UDLAP" class="imagen-universidad">
+                <a href="https://www.udlap.mx" target="_blank" class="link-oficial">Ir al sitio oficial de UDLAP</a>
+            </div>
+        </div>
+
+ <!-- Universidad 3: UPAEP -->
+        <div class="universidad">
+            <img src="upaep.jpg" alt="UPAEP" class="imagen-universidad">
+            <h3>Universidad Popular Autónoma del Estado de Puebla (UPAEP)</h3>
+            <p><strong>Descripción:</strong> UPAEP es una institución educativa privada en Puebla que se destaca por sus programas de medicina y su enfoque en el desarrollo integral de los estudiantes.</p>
+            
+            <div class="botones">
+                <button class="btn" onclick="mostrarInformacion('programas-upaep')">📚 Programas</button>
+                <button class="btn" onclick="mostrarInformacion('requisitos-upaep')">📜 Requisitos</button>
+                <button class="btn" onclick="mostrarInformacion('becas-upaep')">💰 Becas</button>
+                <button class="btn" onclick="mostrarInformacion('mas-info-upaep')">🔗 Ver Más</button>
+            </div>
+
+            <div id="programas-upaep" class="informacion-dinamica">
+                <h4>📚 Programas Académicos UPAEP</h4>
+                <ul>
+                    <li>Medicina General</li>
+                    <li>Cirugía</li>
+                    <li>Odontología</li>
+                </ul>
+            </div>
+
+            <div id="requisitos-upaep" class="informacion-dinamica">
+                <h4>📜 Requisitos para ingresar a UPAEP</h4>
+                <ul>
+                    <li>Examen de admisión</li>
+                    <li>Certificado de bachillerato</li>
+                    <li>Entrevista personal</li>
+                    <li>Comprobante de pago de inscripción</li>
+                </ul>
+            </div>
+
+            <div id="becas-upaep" class="informacion-dinamica">
+                <h4>💰 Becas que ofrece UPAEP</h4>
+                <ul>
+                    <li>Becas académicas</li>
+                    <li>Becas deportivas</li>
+                    <li>Becas por desempeño</li>
+                </ul>
+            </div>
+
+            <div id="mas-info-upaep" class="informacion-dinamica">
+                <h4>🔗 Más información sobre UPAEP</h4>
+                <p>La UPAEP es conocida por su excelencia académica en diversas áreas, especialmente en medicina, donde cuenta con una de las mejores ofertas educativas de Puebla.</p>
+                <img src="upaep-imagen.jpg" alt="Imagen de UPAEP" class="imagen-universidad">
+                <a href="https://www.upaep.mx" target="_blank" class="link-oficial">Ir al sitio oficial de UPAEP</a>
+            </div>
+        </div>
+
+        <!-- Universidad 4: UVM -->
+        <div class="universidad">
+            <img src="uvm.jpg" alt="UVM" class="imagen-universidad">
+            <h3>Universidad del Valle de México (UVM)</h3>
+            <p><strong>Descripción:</strong> La UVM es una universidad privada de renombre, con programas educativos de alta calidad, incluyendo su oferta en el área de la salud.</p>
+            
+            <div class="botones">
+                <button class="btn" onclick="mostrarInformacion('programas-uvm')">📚 Programas</button>
+                <button class="btn" onclick="mostrarInformacion('requisitos-uvm')">📜 Requisitos</button>
+                <button class="btn" onclick="mostrarInformacion('becas-uvm')">💰 Becas</button>
+                <button class="btn" onclick="mostrarInformacion('mas-info-uvm')">🔗 Ver Más</button>
+            </div>
+
+            <div id="programas-uvm" class="informacion-dinamica">
+                <h4>📚 Programas Académicos UVM</h4>
+                <ul>
+                    <li>Medicina General</li>
+                    <li>Enfermería</li>
+                    <li>Fisioterapia</li>
+                </ul>
+            </div>
+
+            <div id="requisitos-uvm" class="informacion-dinamica">
+                <h4>📜 Requisitos para ingresar a UVM</h4>
+                <ul>
+                    <li>Examen de admisión</li>
+                    <li>Certificado de bachillerato</li>
+                    <li>Entrevista de ingreso</li>
+                    <li>Documentación personal</li>
+                </ul>
+            </div>
+
+            <div id="becas-uvm" class="informacion-dinamica">
+                <h4>💰 Becas que ofrece UVM</h4>
+                <ul>
+                    <li>Becas por rendimiento académico</li>
+                    <li>Becas deportivas</li>
+                    <li>Becas de liderazgo</li>
+                </ul>
+            </div>
+
+            <div id="mas-info-uvm" class="informacion-dinamica">
+                <h4>🔗 Más información sobre UVM</h4>
+                <p>UVM es una universidad privada con una sólida formación en ciencias de la salud, destacándose por sus programas en medicina, enfermería y más.</p>
+                <img src="uvm-imagen.jpg" alt="Imagen de UVM" class="imagen-universidad">
+                <a href="https://www.uvm.mx" target="_blank" class="link-oficial">Ir al sitio oficial de UVM</a>
+            </div>
+        </div>
+
+    </section>
+<!-- Pie de p��gina -->
+<footer>
+    <div class="footer-content">
+        <p>Hecho por: <strong>Carlos Victoria</strong></p>
+        <p>Grupo: <strong>2 TICs</strong></p>
+        <p>Generacion: <strong>2022-2025</strong></p>
+        <p>Docente: <strong>Adalio Alejandro Qui&ntilde;ones Sol&iacute;s</strong></p>
+    </div>
+</footer>
+
+<!-- Estilos CSS para el pie de p��gina -->
+<style>
+    footer {
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+		margin-top: 20px
+    }
+
+    .footer-content p {
+        margin: 5px 0;
+    }
+
+    .footer-content strong {
+        font-size: 16px;
+    }
+</style>
+</style>
+</body>
+</html>
